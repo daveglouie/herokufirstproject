@@ -1,6 +1,6 @@
 <?php
 
-/*
+
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
@@ -19,8 +19,9 @@ $app->get('/', function() use($app) {
 });
 
 $app->run();
-*/
 
+
+/*
 <Response>
 <Say voice="alice">
 O M G.  D must have done it.
@@ -37,5 +38,6 @@ Whose D?
 	ha ha ha ha.  Very funny!
 	</Say>
 </Response>
+*/
 
 ?>
