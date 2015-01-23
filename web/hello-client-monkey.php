@@ -9,6 +9,11 @@ $capability = new Services_Twilio_Capability($accountSid, $authToken);
 $capability->allowClientOutgoing('APf62a9b9efd940f4741a46b706a36d6b4');
 $capability->allowClientIncoming('jenny');
 $token = $capability->generateToken();
+
+if (isset($_REQUEST['PhoneNumber']))
+    $number = htmlspecialchars($_REQUEST['PhoneNumber']);
+else
+	$number = "+1800NOSOFTWARE";
 ?>
  
 <!DOCTYPE html>
@@ -62,9 +67,10 @@ $token = $capability->generateToken();
  <button class="hangup" onclick="hangup();">
    Hangup
  </button>
+
  
  <input type="text" id="number" name="number"
-   placeholder="Enter a phone number to call"/>
+   value="<?php echo $number ?>"/>
    
     <div id="log">Loading pigeons...</div>
   </body>
