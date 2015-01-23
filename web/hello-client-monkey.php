@@ -18,9 +18,9 @@ $token = $capability->generateToken();
     <script type="text/javascript"
       src="//static.twilio.com/libs/twiliojs/1.2/twilio.min.js"></script>
     <script type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
     </script>
-    <link href="https://static0.twilio.com/packages/quickstart/client.css"
+    <link href="//static0.twilio.com/packages/quickstart/client.css"
       type="text/css" rel="stylesheet" />
     <script type="text/javascript">
  
